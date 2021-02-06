@@ -77,8 +77,8 @@ void MainWindow::on_pushButton_4_clicked()
     if(alturaOfensor>=0 && alturaDefensor<300){
     if(alturaDefensor>=0 && alturaDefensor<300){
     if(Distancia>=100 && Distancia<350){
-    CannonOfensivo=new ObjetoFisico(0,alturaOfensor,20);scene->addItem(CannonOfensivo);
-    CannonDefensivo=new ObjetoFisico(Distancia,alturaDefensor,20);scene->addItem(CannonDefensivo);
+    CannonOfensivo=new ObjetoFisico(0,alturaOfensor,30,Distancia,"Ofensivo");scene->addItem(CannonOfensivo);
+    CannonDefensivo=new ObjetoFisico(Distancia,alturaDefensor,30,Distancia,"Defensivo");scene->addItem(CannonDefensivo);
     ui->pushButton_4->hide();//Boton Confirmar
     ui->pushButton->hide();
     ui->HO->hide();

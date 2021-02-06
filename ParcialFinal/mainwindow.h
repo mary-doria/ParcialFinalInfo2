@@ -58,8 +58,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     //Valores estandar en el caso si el usuario no ingresa valores
-    float alturaOfensor=350,alturaDefensor=350,Distancia=100;
-    QMessageBox Mensaje;
+float alturaOfensor=350,alturaDefensor=350,Distancia=100;
+QMessageBox Mensaje;
 
 };
 #endif // MAINWINDOW_H
