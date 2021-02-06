@@ -17,14 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     bala.cpp \
-    canon.cpp \
     main.cpp \
     mainwindow.cpp \
     objetofisico.cpp
 
 HEADERS += \
     bala.h \
-    canon.h \
     mainwindow.h \
     objetofisico.h
 

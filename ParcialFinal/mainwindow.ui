@@ -27,8 +27,8 @@
    <widget class="QPushButton" name="Caso1">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>30</y>
+      <x>20</x>
+      <y>140</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -40,8 +40,8 @@
    <widget class="QPushButton" name="Caso2">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>60</y>
+      <x>20</x>
+      <y>170</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -53,8 +53,8 @@
    <widget class="QPushButton" name="Caso3">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>90</y>
+      <x>20</x>
+      <y>200</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -66,8 +66,8 @@
    <widget class="QPushButton" name="Caso4">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>120</y>
+      <x>20</x>
+      <y>230</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -79,8 +79,8 @@
    <widget class="QPushButton" name="Caso5">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>150</y>
+      <x>20</x>
+      <y>260</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -128,7 +128,7 @@
      <string>d:Distancia</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="HO">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -138,7 +138,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="HD">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -148,7 +148,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="D">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -156,6 +156,19 @@
       <width>51</width>
       <height>20</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>110</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Confirme Datos</string>
     </property>
    </widget>
   </widget>
