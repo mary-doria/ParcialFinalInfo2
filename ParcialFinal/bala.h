@@ -45,15 +45,17 @@ public:
     void setK(float value);//Actualiza la resistencia al aire
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr);
-
+    //Detectar la colision con algun otro objeto
     bool detectarColision(float cannonY, float radio, float d);
     void recorrerDistanciaX(float d);
-
+    //Trayectoria del objeto
     void recorrerDistancia();
     float getDistancia() const;
     void setDistancia(float value);
+    //Tipo de objeto
     string getTipoObjeto() const;
     void setTipoObjeto(const string &value);
+    //Valor del Radio
     float getR() const;
     void setR(float value);
 };
