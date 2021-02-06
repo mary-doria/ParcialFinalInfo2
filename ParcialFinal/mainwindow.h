@@ -26,10 +26,13 @@ public:
     QGraphicsScene *scene;
     ObjetoFisico *CannonOfensivo,*CannonDefensivo;
     Bala *BalaDefensiva,*BalaOfensiva,*BalaNeutralizadora,*BalaGuia;
-    QList<Bala*> balas;
+    QList<Bala*> balas, balasGuia;
+    int balasMostradas=0;
+    QTimer *timerEnemigos;
 
 public slots:
     void caso1();
+    void caso2();
 
 private slots:
     void on_Caso1_clicked();

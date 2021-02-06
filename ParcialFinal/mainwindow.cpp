@@ -34,17 +34,48 @@ MainWindow::~MainWindow()
 
 void MainWindow::caso1()
 {
+
+    balasGuia.clear();
     BalaOfensiva->recorrerDistancia();
     BalaGuia = new Bala(BalaOfensiva->getX(),BalaOfensiva->getY(),BalaOfensiva->getR(),BalaOfensiva->getVelocidad(),BalaOfensiva->getAngulo(),BalaOfensiva->getK(),BalaOfensiva->getDt(),BalaOfensiva->getDistancia(),BalaOfensiva->getTipoObjeto());
+    balasGuia.push_back(BalaGuia);
     scene->addItem(BalaGuia);
+    if(BalaOfensiva->getX()>=CannonDefensivo->getX()){
+        balasMostradas +=1;
+        if(balasMostradas<3){
+            timerEnemigos->stop();
+            balasMostradas =0;
+            on_Caso1_clicked();
+        }
+    }
+
     cout<<BalaOfensiva->getX()<<", "<<BalaOfensiva->getY()<<endl;
+}
+
+void MainWindow::caso2()
+{
+    balasGuia.clear();
+    BalaDefensiva->recorrerDistancia();
+    BalaGuia = new Bala(BalaDefensiva->getX(),BalaDefensiva->getY(),BalaDefensiva->getR(),BalaDefensiva->getVelocidad(),BalaDefensiva->getAngulo(),BalaDefensiva->getK(),BalaDefensiva->getDt(),BalaDefensiva->getDistancia(),BalaDefensiva->getTipoObjeto());
+    balasGuia.push_back(BalaGuia);
+    scene->addItem(BalaGuia);
+    if(BalaDefensiva->getX()<=CannonOfensivo->getX()){
+        balasMostradas +=1;
+        if(balasMostradas<3){
+            timerEnemigos->stop();
+            on_Caso2_clicked();
+            balasMostradas =0;
+        }
+    }
+    cout<<BalaDefensiva->getX()<<", "<<BalaDefensiva->getY()<<endl;
+
 }
 
 //Funcion Caso1
 void MainWindow::on_Caso1_clicked()
 {
  QList<QList<float>> parametros = CannonOfensivo->generarDisparo(CannonDefensivo, 0.05, true);
- QList<float> parametrosActuales = parametros.at(2);
+ QList<float> parametrosActuales = parametros.at(balasMostradas);
  cout<<"Angulo fue:"<<parametrosActuales.at(4)<<endl;
  cout<<"Velocidad fue:"<<parametrosActuales.at(3)<<endl;
  //cout<<"Tiempo es :"<<bullet->getT()<<endl;
@@ -55,14 +86,29 @@ void MainWindow::on_Caso1_clicked()
  } else {
      BalaDefensiva = new Bala(parametrosActuales.at(0),parametrosActuales.at(1),parametrosActuales.at(2),parametrosActuales.at(3),parametrosActuales.at(4),parametrosActuales.at(5),parametrosActuales.at(6),parametrosActuales.at(7),"Defensivo");scene->addItem(BalaDefensiva);
  }
- QTimer *timerEnemigos = new QTimer();
+ timerEnemigos = new QTimer();
  connect(timerEnemigos,SIGNAL(timeout()),this,SLOT(caso1()));
  timerEnemigos->start(1000);
 }
 //Funcion Caso2
 void MainWindow::on_Caso2_clicked()
 {
-
+    balasMostradas=1;
+    QList<QList<float>> parametros = CannonDefensivo->generarDisparo(CannonOfensivo, 0.025, false);
+    QList<float> parametrosActuales = parametros.at(balasMostradas);
+    cout<<"Angulo fue:"<<parametrosActuales.at(4)<<endl;
+    cout<<"Velocidad fue:"<<parametrosActuales.at(3)<<endl;
+    //cout<<"Tiempo es :"<<bullet->getT()<<endl;
+    cout<<"Y es: "<<parametrosActuales.at(1)<<endl;//ALTURA DE LA BALA OFENSIVA
+    cout<<"X es: "<<parametrosActuales.at(0)<<endl;//DISTANCIA RECORRIDA DE LA BALA OFENSIVA
+    if(parametrosActuales.at(8)==1){
+        BalaOfensiva = new Bala(parametrosActuales.at(0),parametrosActuales.at(1),parametrosActuales.at(2),parametrosActuales.at(3),parametrosActuales.at(4),parametrosActuales.at(5),parametrosActuales.at(6),parametrosActuales.at(7),"Ofensivo");scene->addItem(BalaOfensiva);
+    } else {
+        BalaDefensiva = new Bala(parametrosActuales.at(0),parametrosActuales.at(1),parametrosActuales.at(2),-parametrosActuales.at(3),parametrosActuales.at(4),parametrosActuales.at(5),parametrosActuales.at(6),parametrosActuales.at(7),"Defensivo");scene->addItem(BalaDefensiva);
+    }
+    timerEnemigos = new QTimer();
+    connect(timerEnemigos,SIGNAL(timeout()),this,SLOT(caso2()));
+    timerEnemigos->start(1000);
 }
 //Funcion Caso3
 void MainWindow::on_Caso3_clicked()

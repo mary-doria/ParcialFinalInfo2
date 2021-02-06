@@ -48,7 +48,12 @@ QList<QList<float> > ObjetoFisico::generarDisparo(ObjetoFisico *cannonObjetivo, 
             parametrosCorrectos.push_back(1);
             parametrosCorrectos.push_back(0.1);
             parametrosCorrectos.push_back(distancia);
-            parametrosCorrectos.push_back(1);
+            if(ofensivo==true){
+                parametrosCorrectos.push_back(1);
+            } else {
+                parametrosCorrectos.push_back(0);
+            }
+
             listaParametros.push_back(parametrosCorrectos);
 
             }
