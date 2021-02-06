@@ -227,15 +227,18 @@ release/moc_mainwindow.cpp: ../ParcialFinal/mainwindow.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QTimer \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qtimer.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qdialog.h \
 		../ParcialFinal/bala.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QObject \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QWidget \
-		../ParcialFinal/objetofisico.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QGraphicsItem \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/QPainter \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpainter.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QObject \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QWidget \
+		../ParcialFinal/objetofisico.h \
 		release/moc_predefs.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/bin/moc.exe
 	C:\Qt\Qt5.12.9\5.12.9\mingw73_32\bin\moc.exe $(DEFINES) --include C:/Users/57316/Documents/GITHUB/ParcialFinalInfo2/build-ParcialFinal-Desktop_Qt_5_12_9_MinGW_32_bit-Debug/release/moc_predefs.h -IC:/Qt/Qt5.12.9/5.12.9/mingw73_32/mkspecs/win32-g++ -IC:/Users/57316/Documents/GITHUB/ParcialFinalInfo2/ParcialFinal -IC:/Qt/Qt5.12.9/5.12.9/mingw73_32/include -IC:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets -IC:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui -IC:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtANGLE -IC:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore -I. -IC:/Qt/Qt5.12.9/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.12.9/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.12.9/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.12.9/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.12.9/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.12.9/Tools/mingw730_32/i686-w64-mingw32/include ..\ParcialFinal\mainwindow.h -o release\moc_mainwindow.cpp
@@ -264,8 +267,8 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 ####### Compile
 
 release/bala.o: ../ParcialFinal/bala.cpp ../ParcialFinal/bala.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QMainWindow \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QGraphicsItem \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qtwidgetsglobal.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qtguiglobal.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qglobal.h \
@@ -291,13 +294,10 @@ release/bala.o: ../ParcialFinal/bala.cpp ../ParcialFinal/bala.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qversiontagging.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qtgui-config.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qtwidgets-config.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qwindowdefs.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qobject.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qobjectdefs.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qnamespace.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qwindowdefs_win.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qobject.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qstring.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qchar.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qbytearray.h \
@@ -322,46 +322,55 @@ release/bala.o: ../ParcialFinal/bala.cpp ../ParcialFinal/bala.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qvarlengtharray.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qcontainerfwd.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qmargins.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpaintdevice.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qrect.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qsize.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpalette.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qcolor.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qrgb.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qrgba64.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qbrush.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qvariant.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qmap.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qdebug.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qhash.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qtextstream.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qiodevice.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qlocale.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qshareddata.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qvector.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qpoint.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qset.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qcontiguouscache.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qsharedpointer.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qrect.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qmargins.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qsize.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpainterpath.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qmatrix.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpolygon.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qregion.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qwindowdefs.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qwindowdefs_win.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qiodevice.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qline.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qtransform.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpainterpath.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpixmap.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpaintdevice.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qcolor.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qrgb.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qrgba64.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qimage.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpixelformat.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpixmap.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qhash.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qtransform.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/QPainter \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpainter.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qbrush.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qfontinfo.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qfont.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qfontmetrics.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qfontinfo.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qwidget.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpalette.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qsizepolicy.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qcursor.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qkeysequence.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qevent.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qmap.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qset.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qcontiguouscache.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qurl.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qurlquery.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qfile.h \
@@ -488,15 +497,18 @@ release/main.o: ../ParcialFinal/main.cpp ../ParcialFinal/mainwindow.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QTimer \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qtimer.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qdialog.h \
 		../ParcialFinal/bala.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QObject \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QWidget \
-		../ParcialFinal/objetofisico.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QGraphicsItem \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/QPainter \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpainter.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QObject \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QWidget \
+		../ParcialFinal/objetofisico.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QApplication \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qapplication.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qcoreapplication.h \
@@ -620,15 +632,18 @@ release/mainwindow.o: ../ParcialFinal/mainwindow.cpp ../ParcialFinal/mainwindow.
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QTimer \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qtimer.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qbasictimer.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qdialog.h \
 		../ParcialFinal/bala.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QObject \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QWidget \
-		../ParcialFinal/objetofisico.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QGraphicsItem \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/QPainter \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpainter.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QObject \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QWidget \
+		../ParcialFinal/objetofisico.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\ParcialFinal\mainwindow.cpp
 

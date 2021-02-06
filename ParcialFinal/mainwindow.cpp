@@ -3,6 +3,8 @@
 #include <QGraphicsScene>
 #include <iostream>
 #include <string>
+#include "bala.h"
+#include "objetofisico.h"
 using namespace std;
 
 MainWindow::MainWindow(QWidget *parent)
@@ -13,7 +15,9 @@ MainWindow::MainWindow(QWidget *parent)
     scene = new QGraphicsScene;
     ui->graphicsView->setScene(scene);
     scene->setSceneRect(0,0,400,400);
-    //stof(AlturaOfensor),//stof(AlturaDefensor),//stof(Distancia)
+    BalaOfensiva=new Bala(250,250,10,5,1,1,1,300,"Ofensivo");scene->addItem(BalaOfensiva);
+    BalaDefensiva=new Bala(300,300,10,5,1,1,1,300,"Defensivo");scene->addItem(BalaDefensiva);
+
     ui->Caso1->hide();
     ui->Caso2->hide();
     ui->Caso3->hide();
@@ -79,6 +83,7 @@ void MainWindow::on_pushButton_4_clicked()
     if(Distancia>=100 && Distancia<350){
     CannonOfensivo=new ObjetoFisico(0,alturaOfensor,30,Distancia,"Ofensivo");scene->addItem(CannonOfensivo);
     CannonDefensivo=new ObjetoFisico(Distancia,alturaDefensor,30,Distancia,"Defensivo");scene->addItem(CannonDefensivo);
+
     ui->pushButton_4->hide();//Boton Confirmar
     ui->pushButton->hide();
     ui->HO->hide();

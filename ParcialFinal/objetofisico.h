@@ -5,8 +5,10 @@
 using namespace std;
 
 class ObjetoFisico: public QGraphicsItem
-{private:
+{
+private:
  float x,y,r,distancia;
+
  string tipoObjeto;
 
 public:

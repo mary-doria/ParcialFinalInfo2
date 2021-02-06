@@ -52,11 +52,17 @@ void ObjetoFisico::paint(QPainter *painter, const QStyleOptionGraphicsItem *opti
     painter->setBrush(Qt::red);
     painter->drawEllipse(-(r+0.025*distancia),-(r+0.025*distancia),2*(r+0.025*distancia),2*(r+0.025*distancia));}
     else if(tipoObjeto=="Defensivo"){
-    painter->setBrush(Qt::yellow);
-    painter->drawEllipse(-(r+0.05*distancia),-(r+0.05*distancia),2*(r+0.05*distancia),2*(r+0.05*distancia));
+        painter->setBrush(Qt::yellow);
+        painter->drawEllipse(-(r+0.05*distancia),-(r+0.05*distancia),2*(r+0.05*distancia),2*(r+0.05*distancia));
 
     }
+    if(tipoObjeto=="Ofensivo"){
+    painter->setBrush(Qt::green);
+    painter->drawEllipse(boundingRect());}
+    else if(tipoObjeto=="Defensivo"){
     painter->setBrush(Qt::blue);
     painter->drawEllipse(boundingRect());
+
+    }
 
 }
