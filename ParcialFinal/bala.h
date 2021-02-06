@@ -7,17 +7,19 @@
 #include <QWidget>
 #include <string>
 #include "string.h"
+#include "objetofisico.h"
 
 using namespace std;
 
 class Bala: public QGraphicsItem
 {
 private:
-    float x,y,r,velocidad,angulo,distancia;
+    float x,y,r,velocidad,angulo,distancia,t;
     string tipoObjeto;
     float g=1; //Gravedad
     float K; //Resistencia del aire
     float dt; //Delta de tiempo
+
 public:
     Bala(float x_,float y_,float r_,float velocidad_,float angulo_,float K_,float dt_,float distancia_,string tipoObjeto_);
     //Posicion en x
@@ -43,6 +45,17 @@ public:
     void setK(float value);//Actualiza la resistencia al aire
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr);
+
+    bool detectarColision(float cannonY, float radio, float d);
+    void recorrerDistanciaX(float d);
+
+    void recorrerDistancia();
+    float getDistancia() const;
+    void setDistancia(float value);
+    string getTipoObjeto() const;
+    void setTipoObjeto(const string &value);
+    float getR() const;
+    void setR(float value);
 };
 
 #endif // BALA_H

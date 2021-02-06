@@ -2,16 +2,22 @@
 #define OBJETOFISICO_H
 #include <QGraphicsItem>
 #include <QPainter>
+#include "bala.h"
+#include "QList"
+
 using namespace std;
 
-class ObjetoFisico: public QGraphicsItem
-{
+#include "bala.h"
+
+class ObjetoFisico: public QGraphicsItem{
 private:
  float x,y,r,distancia;
 
  string tipoObjeto;
 
 public:
+ QList<QList<float>> generarDisparo(ObjetoFisico *cannonObjetivo, float radio, bool ofensivo);
+
 ObjetoFisico(float x_,float y_,float r_,float distancia_,string tipoObjeto_);//Atributos de la clase ,posicion en x y
 //Posicion en x
 float getX() const;//Retorna posicion en x
@@ -24,6 +30,7 @@ void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *w
 
 string getTipoObjeto() const;
 void setTipoObjeto(const string &value);
+
 };
 
 #endif // OBJETOFISICO_H

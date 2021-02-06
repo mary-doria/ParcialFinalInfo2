@@ -11,7 +11,6 @@
 #include "bala.h"
 //Clase donde se dibujan los cañones
 #include "objetofisico.h"
-#include "bala.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -26,9 +25,11 @@ public:
     ~MainWindow();
     QGraphicsScene *scene;
     ObjetoFisico *CannonOfensivo,*CannonDefensivo;
-    Bala *BalaDefensiva,*BalaOfensiva,*BalaNeutralizadora;
+    Bala *BalaDefensiva,*BalaOfensiva,*BalaNeutralizadora,*BalaGuia;
+    QList<Bala*> balas;
 
-
+public slots:
+    void caso1();
 
 private slots:
     void on_Caso1_clicked();

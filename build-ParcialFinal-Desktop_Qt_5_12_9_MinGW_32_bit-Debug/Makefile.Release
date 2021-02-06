@@ -380,7 +380,8 @@ release/bala.o: ../ParcialFinal/bala.cpp ../ParcialFinal/bala.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qicon.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QObject \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QWidget
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QWidget \
+		../ParcialFinal/objetofisico.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\bala.o ..\ParcialFinal\bala.cpp
 
 release/main.o: ../ParcialFinal/main.cpp ../ParcialFinal/mainwindow.h \
@@ -743,7 +744,26 @@ release/objetofisico.o: ../ParcialFinal/objetofisico.cpp ../ParcialFinal/objetof
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qbrush.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qfontinfo.h \
 		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qfont.h \
-		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qfontmetrics.h
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qfontmetrics.h \
+		../ParcialFinal/bala.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QMainWindow \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qwidget.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qpalette.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qsizepolicy.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qcursor.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qkeysequence.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qevent.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qurl.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qurlquery.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qfile.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/qfiledevice.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qvector2d.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qtouchdevice.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtGui/qicon.h \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtCore/QObject \
+		C:/Qt/Qt5.12.9/5.12.9/mingw73_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\objetofisico.o ..\ParcialFinal\objetofisico.cpp
 
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 

@@ -15,8 +15,8 @@ MainWindow::MainWindow(QWidget *parent)
     scene = new QGraphicsScene;
     ui->graphicsView->setScene(scene);
     scene->setSceneRect(0,0,400,400);
-    BalaOfensiva=new Bala(250,250,10,5,1,1,1,300,"Ofensivo");scene->addItem(BalaOfensiva);
-    BalaDefensiva=new Bala(300,300,10,5,1,1,1,300,"Defensivo");scene->addItem(BalaDefensiva);
+    //BalaOfensiva=new Bala(250,250,10,5,1,1,1,300,"Ofensivo");scene->addItem(BalaOfensiva);
+    //BalaDefensiva=new Bala(300,300,10,5,1,1,1,300,"Defensivo");scene->addItem(BalaDefensiva);
 
     ui->Caso1->hide();
     ui->Caso2->hide();
@@ -32,10 +32,32 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::caso1()
+{
+    BalaOfensiva->recorrerDistancia();
+    BalaGuia = new Bala(BalaOfensiva->getX(),BalaOfensiva->getY(),BalaOfensiva->getR(),BalaOfensiva->getVelocidad(),BalaOfensiva->getAngulo(),BalaOfensiva->getK(),BalaOfensiva->getDt(),BalaOfensiva->getDistancia(),BalaOfensiva->getTipoObjeto());
+    scene->addItem(BalaGuia);
+    cout<<BalaOfensiva->getX()<<", "<<BalaOfensiva->getY()<<endl;
+}
+
 //Funcion Caso1
 void MainWindow::on_Caso1_clicked()
 {
-
+ QList<QList<float>> parametros = CannonOfensivo->generarDisparo(CannonDefensivo, 0.05, true);
+ QList<float> parametrosActuales = parametros.at(2);
+ cout<<"Angulo fue:"<<parametrosActuales.at(4)<<endl;
+ cout<<"Velocidad fue:"<<parametrosActuales.at(3)<<endl;
+ //cout<<"Tiempo es :"<<bullet->getT()<<endl;
+ cout<<"Y es: "<<parametrosActuales.at(1)<<endl;//ALTURA DE LA BALA OFENSIVA
+ cout<<"X es: "<<parametrosActuales.at(0)<<endl;//DISTANCIA RECORRIDA DE LA BALA OFENSIVA
+ if(parametrosActuales.at(8)==1){
+     BalaOfensiva = new Bala(parametrosActuales.at(0),parametrosActuales.at(1),parametrosActuales.at(2),parametrosActuales.at(3),parametrosActuales.at(4),parametrosActuales.at(5),parametrosActuales.at(6),parametrosActuales.at(7),"Ofensivo");scene->addItem(BalaOfensiva);
+ } else {
+     BalaDefensiva = new Bala(parametrosActuales.at(0),parametrosActuales.at(1),parametrosActuales.at(2),parametrosActuales.at(3),parametrosActuales.at(4),parametrosActuales.at(5),parametrosActuales.at(6),parametrosActuales.at(7),"Defensivo");scene->addItem(BalaDefensiva);
+ }
+ QTimer *timerEnemigos = new QTimer();
+ connect(timerEnemigos,SIGNAL(timeout()),this,SLOT(caso1()));
+ timerEnemigos->start(1000);
 }
 //Funcion Caso2
 void MainWindow::on_Caso2_clicked()
